@@ -43,7 +43,7 @@ First of all create a list of projects by adding ProjectName, ProjectDescription
 
 Step 2:
 
-First of all create a list of projects by adding ProjectName, ProjectDescription and ProjectLink and mind that you should use the <b>Project</b> as a type of list.
+Then create a list of DeveloperProfiles by adding ProfileLink & Icon and mind that you should use the <b>DeveloperProfile</b> as a type of list.
 
 ```
 
