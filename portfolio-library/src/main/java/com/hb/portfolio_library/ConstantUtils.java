@@ -7,4 +7,5 @@ package com.hb.portfolio_library;
 public class ConstantUtils {
     public static String PROJECTS="projects";
     public static String PROFILES="profiles";
+    public static String DEVELOPER_NAME="developer_name";
 }

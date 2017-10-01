@@ -30,10 +30,18 @@ public class MainActivity extends AppCompatActivity implements DeveloperProfileR
         setContentView(R.layout.activity_main);
 
         init();
+        getDeveloperName();
         getProfiles();
         getProjects();
     }
 
+    private void getDeveloperName(){
+        Intent i=getIntent();
+        String name=i.getStringExtra(ConstantUtils.DEVELOPER_NAME);
+        if(name!=null){
+            setTitle(name);
+        }
+    }
     private void getProjects() {
         Intent i = getIntent();
         mProjects = (List<Project>) i.getSerializableExtra(ConstantUtils.PROJECTS);

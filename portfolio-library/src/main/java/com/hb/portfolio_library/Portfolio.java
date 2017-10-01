@@ -12,12 +12,14 @@ import java.util.List;
 
 public class Portfolio {
     private Context mContext;
+    private String mDeveloperName;
     private List<DeveloperProfile> mDeveloperProfileList;
     private List<Project> mProjectList;
     Portfolio(Builder builder){
         mContext=builder.mContext;
         mDeveloperProfileList=builder.mDeveloperProfiles;
         mProjectList=builder.mProjects;
+        mDeveloperName=builder.mDeveloperName;
 
     }
 
@@ -25,6 +27,7 @@ public class Portfolio {
         private Context mContext;
         private List<DeveloperProfile> mDeveloperProfiles;
         private List<Project> mProjects;
+        private String mDeveloperName;
 
         public Builder(Context context) {
             mContext = context;
@@ -38,6 +41,10 @@ public class Portfolio {
             this.mProjects=projects;
             return this;
         }
+        public Builder withDeveloperName(String developerName){
+            mDeveloperName=developerName;
+            return this;
+        }
         public Portfolio build(){
             return new Portfolio(this);
         }
@@ -46,6 +53,7 @@ public class Portfolio {
         Intent i=new Intent(mContext,MainActivity.class);
         i.putExtra(ConstantUtils.PROJECTS,(Serializable)mProjectList);
         i.putExtra(ConstantUtils.PROFILES,(Serializable)mDeveloperProfileList);
+        i.putExtra(ConstantUtils.DEVELOPER_NAME,mDeveloperName);
         mContext.startActivity(i);
 
     }

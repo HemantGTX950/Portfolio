@@ -63,6 +63,7 @@ public class LandingActivity extends AppCompatActivity {
         new Portfolio.Builder(LandingActivity.this)
                 .withProfiles(developerProfileList)
                 .withProjects(projectList)
+                .withDeveloperName("Hemant Bansal")
                 .build()
                 .start();
 
