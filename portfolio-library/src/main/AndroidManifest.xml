@@ -8,7 +8,8 @@
         android:supportsRtl="true"
         >
         <activity android:name=".MainActivity"
-                  android:theme="@style/AppThemePortfolio">
+                  android:theme="@style/AppThemePortfolio"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
