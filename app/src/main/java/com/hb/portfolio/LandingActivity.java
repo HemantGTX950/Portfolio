@@ -53,7 +53,7 @@ public class LandingActivity extends AppCompatActivity {
 
         DeveloperProfile linkedin=new DeveloperProfile();
 
-        linkedin.setIcon(R.drawable.linkedin_logo);
+        linkedin.setIcon(R.drawable.linkedin);
         linkedin.setProfileLink("https://www.linkedin.com/in/hemantbansal950");
         developerProfileList.add(github);
         developerProfileList.add(linkedin);
