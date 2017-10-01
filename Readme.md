@@ -1,5 +1,5 @@
 
-# EasyPortfolio
+# Portfolio-Library
 So you have developed full Application, Now the part comes when you are required to showcase your awesome projects but you feel terrible for creating something boilerplate. Now don't feel just write couple of lines about your projects and provide link to those projects and bamm you get the PortfolioActivity. 
 
 <img src="https://github.com/HemantGTX950/Portfolio/blob/master/1.png" height="700" width="400" >
@@ -8,10 +8,20 @@ So you have developed full Application, Now the part comes when you are required
 # Download
 
 **Gradle**
+# Min SDK
+Minimum sdk is 16 and support is limited to recyclerview for now.
 
-```groovy
-
-
+# Add it in your root build.gradle at the end of repositories:
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+	
+# Add the dependency
+```
+  compile 'com.github.HemantGTX950:Portfolio:v1.0.0'
 ```
 
 # Usage
