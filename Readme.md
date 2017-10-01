@@ -7,7 +7,7 @@ So you have developed full Application, Now the part comes when you are required
 
 # Download
 
-**Gradle**
+
 # Min SDK
 Minimum sdk is 16 and support is limited to recyclerview for now.
 
