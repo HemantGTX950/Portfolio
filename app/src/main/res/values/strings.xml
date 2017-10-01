@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Portfolio</string>
+    <string name="project_name">Project Name</string>
+    <string name="project_desc">Describe the project</string>
+    <string name="developer_profiles">Developer Profiles</string>
+    <string name="projects">Projects</string>
+</resources>
